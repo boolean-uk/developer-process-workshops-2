@@ -18,7 +18,7 @@ const boardGame = (commands) => {
         if (dir >= 3) dir = 3
         if (dir <= 0) dir = 0
         
-        return [x, y, dir === 0 ? "N" : dir === 1 ? "E" : dir === 2 ? "W" : "S"]
+        return [x, y, dir === 0 ? "N" : dir === 1 ? "E" : dir === 2 ? "S" : "W"]
     })
 
     return coords[coords.length - 1]
